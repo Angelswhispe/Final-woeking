@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ethnocentric');
+
+
+.container {
+  /* margin-top: 96px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  position: absolute;
+  padding: 0 24px;
+  background-color: #000000;
+  z-index: 3444;
+  position: relative;
+  left: 19.5%;
+  top: 65px;
+  
+}
+
+@media only screen and (max-width: 1800px) and (min-width: 1600px) {
+
+}
+.bigDiv .container {
+  width: 80vw;
+  /* height: 30vh; */
+  position: relative;
+  left: 25%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+
+.stickySideNav {
+  position: sticky;
+  top: 60px;
+  width: 308px;
+  background-color: #000000;
+  color: white;
+  padding: 60px 50px;
+  /* height: 358vh; */
+  height: 100vh;
+  border: 1px solid #444;
+  z-index: 9999999;
+  
+}
+
+.bigDiv .container {
+  height: 100vh;
+  position: relative;
+  left: 0%;
+  top: 0;
+  width: 100vw;
+}
+
+.bigDiv .stickySideNav  {
+  
+  height: 100vh;
+ 
+  
+}
+
+.mainflex {
+  z-index: 9999999999;
+  /* z-index: 9999999999; */
+  width: 100vw;
+  overflow: hidden;
+}
+.innerContainer {
+  width: 80vw;
+  position: relative;
+  left: 20vw;
+}
+.h1 {
+  margin-bottom: 0px;
+}
+
+.explain {
+  font-size: 1.125rem;
+  max-width: 1200px;
+}
+
+.divider {
+  width: 50%;
+  border-color: grey;
+  opacity: 0.25;
+}
+
+.smallDivider {
+  width: 25%;
+  border-color: grey;
+  margin-top: 64px;
+  opacity: 0.25;
+}
+.mainDiv {
+  width: 95%;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 10px;
+  line-height: 2px;
+  margin-left: -275px;
+  /* min-height: 80vh; */
+}
+.connect {
+  text-decoration: underline;
+  /* color: linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to, transparent));
+  --tw-gradient-from: #f97316;
+  --tw-gradient-to: #ff6363; */
+  color: #f97316;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  left: -25%;
+}
+.nftBoxGrids {
+  /* width: 1175px; */
+  max-width: 65vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+.nftBoxGrid {
+  width: 104%;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  margin-top: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 16vh;
+}
+
+.nftBox {
+  /* border-radius: 23px; */
+  border: 1px solid #ccc;
+  width: 32%;
+  height: 141px;
+  /* padding: 16px; */
+  display: flex;
+  margin-left: -3.8%;
+  width: 98%;
+  cursor: pointer;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+}
+
+.nftBoxs {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  width: 19%;
+  min-height: 200px;
+  /* padding: 16px; */
+}
+.optionSelectBox {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  width: 48%;
+  min-height: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+}
+
+.selectBoxTitle {
+  font-size: 1.75rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.selectBoxDescription {
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 0px;
+}
+
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  /* padding-right: 30%; */
+  font-weight: bolder;
+  height: 10px;
+}
+
+/* Between 1200 and 800 */
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .nftBox {
+    width: 69%;
+    margin-top: 16px;
+  }
+  .nftBoxs {
+    width: 49%;
+    margin-top: 16px;
+  }
+  
+}
+
+/* beneath 800
+*/
+@media only screen and (max-width: 800px) {
+  .nftBoxGrid {
+    justify-content: center;
+    
+  }
+  .nftBox {
+    width: 90%;
+    margin-top: 16px;
+  }
+  .optionSelectBox {
+    width: 90%;
+    margin-top: 16px;
+  }
+}
+
+.tokenGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  left: 80px;
+  justify-content: center;
+  gap: 0%;
+  width: 1600px;
+  max-width: 95vw;
+  flex-wrap: wrap;
+  margin: 4px 0;
+}
+.claimRewards {
+  position: relative;
+  left: -42.5%;
+}
+
+.tokenItem {
+  width: 28%;
+  height: 33px;
+  border-radius: 16px;
+  display: flex
+;
+  left: 48px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.displaytok{
+  display: flex
+;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: relative;
+    left: 10vw;
+}
+
+.tokenLabel {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size: 10px;
+  font-family: 'Ethnocentric Rg', sans-serif ! important ;
+  
+  color: rgba(255, 255, 255, 0.7);
+}
+.nftName {
+  margin-top: 40px;
+  left: -4.4%;
+  position: relative;
+}
+  .namename{
+    margin-top: 55px;
+    left: -4.4%;
+    position: relative;
+  }
+
+.top p {
+  padding: 0px 35px;
+}
+
+/* Second tokenLabel item */
+
+.tokenValue {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  /* font-weight: 500; */
+  font-weight: 100;
+  font-family: 'Ethnocentric Rg', sans-serif ! important ;
+}
+
+/* On Mobile, make tokenGrid 100% width */
+@media only screen and (max-width: 850px) {
+  .tokenItem {
+    width: 90%;
+    margin-top: 12px;
+  }
+}
+
+/* Screen less than 630, then hide .center */
+@media only screen and (max-width: 630px) {
+  .center {
+    display: none;
+  }
+}
+
+.spacerTop {
+  margin-top: 16px;
+}
+
+.bigSpacerTop {
+  margin-top: 32px;
+}
+
+.spacerBottom {
+  margin-bottom: 16px;
+}
+
+.detailPageHr {
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.nftMedia {
+  width: 100%;
+  max-height: 116px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: -26%;
+}
+
+.wallett {
+  background-color: rgb(182 170 140) !important;
+  /* background: linear-gradient(153deg, rgb(4, 25, 58) 36%, rgba(249, 228, 0, 1) 100%) !important; */
+  border-radius: 12px !important;
+  -webkit-box-shadow: 10px 10px 20px -6px rgba (100, 230,250,0.7) !important;
+-moz-box-shadow: 10px 10px 20px -6px rgba (100,230, 250,0.7) !important; 
+  box-shadow: 0px 0px 20px 2px rgba(100, 230, 250, 0.7) !important;
+  color: ■white !important;
+  cursor: pointer !important;
+  font-size: 100% ! important;
+  font-family:"Bungee" !important;
+  height: 63px ! important;
+  /* width: 106px; */
+  padding: 0 25px !important;
+  position: relative !important;
+  text-align: center !important;
+  transition: all 0.15s ease-in-out !important;
+  left: 80% !important;
+  /* top: -159px !important; */
+  top: 23px !important;
+  font-family: 'Ethnocentric Rg', sans-serif ! important ;
+                                                
+  /* display: none; */
+}
+
+.wallett:hover{
+  box-shadow: 0px 0px 20px 2px rgba(120, 137, 140, 0.7) !important;
+  transform: translateY(-2px) !important;
+}
+
+.wallettt {
+  background-color: rgb(182 170 140) !important;
+  /* background: linear-gradient(153deg, rgb(4, 25, 58) 36%, rgba(249, 228, 0, 1) 100%) !important; */
+  border-radius: 12px !important;
+  -webkit-box-shadow: 10px 10px 20px -6px rgba (100, 230,250,0.7) !important;
+-moz-box-shadow: 10px 10px 20px -6px rgba (100,230, 250,0.7) !important; 
+  box-shadow: 0px 0px 20px 2px rgba(100, 230, 250, 0.7) !important;
+  color: ■white !important;
+  cursor: pointer !important;
+  font-size: 100% ! important;
+  /* font-family:"Bungee" !important; */
+  font-family: 'Ethnocentric Rg', sans-serif ! important ;
+  height: 36px ! important;
+  top: 22px ! important;
+  left: 190px ! important;
+  padding: 0 25px !important;
+  position: relative !important;
+  text-align: center !important;
+  transition: all 0.15s ease-in-out !important;
+/* left: 88% !important; */
+/* top: 10px !important */
+/* display: none; */
+}
+.stake {
+  left: -75px;
+  position: relative;
+}
+
+.wallettt:hover{
+  box-shadow: 0px 0px 20px 2px rgba(120, 137, 140, 0.7) !important;
+  /* box-shadow: 0px 0px 40px 5px rgba (100,230,250,0.7) !important; */
+  transform: translateY(-2px) !important;
+}
+
+.nftBox+.wallett:hover {
+  display: block;
+}
+@media screen and (max-device-width: 1200px){
+  .mainDiv {
+    margin-left: 0px;
+  }
+}
+@media screen and (min-device-width: 281px) and (max-device-width: 768px){
+  .claimRewards {
+    margin-left: 310px;
+  }
+
+.tokenGrid {
+  
+  position: relative;
+  left: 80px;
+  justify-content: center;
+  gap: 0%;
+  /* width: 70%; */
+  /* max-width: 40vw; */
+  /* flex-wrap: wrap; */
+  margin: 4px 0;
+}
+
+  .wallettt{
+    position: relative;
+      left: -15% !important;
+  top: 69px !important;
+  height: 40%;
+  width: 140%;
+  }
+  .mainDiv {
+    margin-left: 0px;
+    
+  }
+  .top {
+    display: none;
+
+  }
+  .mainflex {
+    /* overflow: auto; */
+    /* height: 100vh; */
+    width: 80.7%;
+  }
+  .nftName {
+    margin-top: 40px;
+    margin-left: -20px;
+  }
+  .nftMedia {
+    width: 130px;
+    max-height: 200px;
+
+    padding: 40px;
+    margin-top: -30px;
+    margin-left: -50px;
+  }
+  .connect {
+    left: -10%;
+
+  }
+  .nftBox {
+    /* border-radius: 23px; */
+    border: 1px solid #ccc;
+    width: 72px;
+    height: 141px;
+    padding: 0px 0px;
+    display: flex;
+    margin-left: 1%;
+    padding-left: 50px;
+    width: 80%;
+    cursor: pointer;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  
+  }
+  .tokenLabel, .tokenValue {
+    font-size: 15px;
+    justify-content: space-between;
+    display: flex;
+    
+  }
+  .container {
+    width: 100%;
+    /* padding: 0; */
+    margin: 0;
+    position: relative;
+    left: 0;
+    /* z-index: 9999; */
+  }
+  .mainDiv {
+    position: relative;
+    left: -70px;
+    margin: 0;
+    padding: 0;
+  }
+  .bigDiv .container {
+    width: 80vw;
+    /* height: 30vh; */
+    position: relative;
+    left: 0%;
+    /* overflow: hidden; */
+    height: 100vh;
+  }
+  .innerContainer {
+    width: 100%;
+    position: relative;
+    left: 0%;
+  }
+  .tokenItem {
+    width: 5%;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: space-around;
+  
+  }
+  .mainDiv {
+    margin-left: 70px;
+    
+    width: 76%;
+  }
+  .top {
+    font-size: 9px;
+  }
+  .connect {
+    font-size: 10px;
+  }
+  .container {
+    z-index: 1px;
+    /* overflow-x: hidden; */
+  }
+}

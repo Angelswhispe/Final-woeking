@@ -1,0 +1,39 @@
+@import url('https://fonts.cdnfonts.com/css/ethnocentric');
+
+.coming {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;    /* Vertically center */
+             /* Full viewport height */
+    width: 80vw;
+    position: fixed;
+    left: 20%;
+    height: 93vh;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    /* max-width: 800px; */
+    margin: auto;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 10000000000;
+    margin-top: 68px;
+    
+  }
+  
+  .coming h1 {
+    font-size: 5rem;  /* Adjust font size */
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonchange{
+    background-image: url("/public/icons8-toggle-on-50.png");
+    width: 50px;
+    height:50px
+  }
+  .comingout{
+    font-family: 'Ethnocentric Rg', sans-serif;
+                                                
+  }
+  

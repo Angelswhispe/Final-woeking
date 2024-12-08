@@ -1,0 +1,102 @@
+.Scontainer {
+  width: 76vw;
+    height: 10vh;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 1%;
+    position: relative;
+    left: -18vw;
+    z-index: -5;
+    border: 2px solid;
+    border-color: #6e6d6b;
+} 
+
+.scrollerWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroller {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap; /* Prevent line wrapping */
+  animation: scroll 12s linear infinite; /* Smooth infinite scroll */
+}
+
+.scrollerItem {
+  flex: 0 0 auto; /* Prevent items from growing or shrinking */
+  width: 200px; /* Default width for desktop */
+  text-align: center;
+}
+
+.image {
+  height: 30px; /* Allow images to scale with their container */
+  width: 20%; /* Ensure images fill their container */
+}
+
+.text {
+  margin-top: 10px;
+  font-size: 1rem; /* Default font size */
+  color: #333;
+}
+
+/* Keyframes for smooth and continuous scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the beginning */
+  }
+  100% {
+    transform: translateX(-25%); /* Scroll half the total width */
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) { /* Tablet */
+  .scrollerItem {
+    width: 150px; /* Smaller width for tablet screens */
+  }
+
+  .text {
+    font-size: 0.9rem; /* Slightly smaller text size */
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .scrollerItem {
+    width: 120px; /* Smaller width for mobile screens */
+  }
+  .Scontainer {
+    width: 110vw;
+    overflow: hidden;
+    margin-top: 3%;
+    position: relative;
+    left: -16%;
+    z-index: -5;
+  } 
+  .container {
+    overflow-x: hidden;
+  }
+  .scrollerWrapper {
+    width: 114vw;
+  }
+  .mainDiv {
+    width: 80vw;
+  }
+  .Scontainer{
+    width: 100vw;
+  }
+  .text {
+    font-size: 0.8rem; /* Smaller text size */
+  }
+}
+
+@media (max-width: 480px) { /* Small mobile */
+  .scrollerItem {
+    width: 100px; /* Smallest width for small mobile devices */
+  }
+
+  .text {
+    font-size: 0.7rem; /* Smallest text size */
+  }
+}

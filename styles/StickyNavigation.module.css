@@ -1,0 +1,350 @@
+/* Container Layout */
+
+@import url('https://fonts.cdnfonts.com/css/ethnocentric');
+
+
+.container {
+  display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: absolute;
+    z-index: 10000000000;
+    position: fixed;
+}
+
+
+
+/* Sticky Top Navigation */
+.stickyTopNav {
+  position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+    /* padding: 10px 20px; */
+    padding: 0;
+    margin: 0;
+    width: 95vw;
+}
+
+.navContent {
+  display: flex
+  ;
+      justify-content: space-between;
+      align-items: center;
+      width: 100vw;
+      background-color: #00000000;
+      border: 2px solid #615c5c;
+  
+}
+
+/* Connect Text */
+.connect {
+  color: white;
+  font-size: 1rem;
+}
+
+/* Desktop Navigation Bar */
+.navBar ul.desktopNav {
+  display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -45px;
+    left: 80%;
+    font-weight: bolder;
+    width: 10vw;
+}
+
+.desktopNav li {
+  margin: 0 0px;
+  margin: 0 0px;
+  position: relative;
+  left: -10vw;
+}
+
+.desktopNav li a {
+  text-decoration: none;
+    color: white;
+    font-size: 0.6rem;
+    /* padding: 0px; */
+    font-family: 'Ethnocentric Rg', sans-serif;
+    margin-right: 30px;
+
+}
+.conbtn {
+  margin-top: -19px;
+  position: relative;
+  left: -6vw;
+}
+/* .desktopNav li a:hover {
+  background-color: #f97316;
+  border-radius: 4px;
+} */
+
+/* Mobile Menu Icon */
+.mobileMenuIcon {
+  display: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile Navigation Menu */
+.mobileNav {
+  display: none;
+  list-style-type: none;
+  background-color: #333;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.mobileNav li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.mobileNav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.mobileNav li a:hover {
+  color: #f97316;
+}
+
+/* Search Bar */
+.searchBar {
+  /* margin-left: 20px; */
+  /* float: left; */
+  height: 65px;
+  width: 58vw;
+  position: relative;
+  left: 0vw;
+  
+}
+
+.searchInput {
+  padding: 8px 20px;
+  height: 65px;
+  font-size: 1rem;
+  background-color: black;
+  border: 1px solid #444;
+  
+  width: 63vw;
+  position: relative;
+  left: -17.4vw;
+  /* top: 12px; */
+}
+.searchBar input {
+  border: 2px solid #444;
+    position: relative;
+    border: 2px solid #444;
+    position: relative;
+    left: -29vw;  
+}
+
+.searchInput::placeholder {
+  color: #999;
+}
+
+/* Main Content Layout */
+.mainDiv {
+  display: flex;
+  flex: 1;
+  margin-top: 0px;
+}
+.image1 {
+  width: 360px;
+  left: 60px;
+  position: relative;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sticky Side Navigation */
+.stickySideNav {
+  position: sticky;
+  top: 60px;
+  width: 307px;
+  background-color: #000000;
+  color: white;
+  padding: 60px 50px;
+  height: 181.4vh;
+  /* height: 100vh; */
+  border: 1px solid #444;
+  z-index: 9999;
+  
+}
+
+nav .lists {
+  display: none;
+  
+}
+.image {
+  width: 33%;
+  position: relative;
+  top: 10px;
+}
+
+.sideNavList {
+  list-style-type: none;
+  padding: 0;
+  width: 120%;
+  
+}
+/* .sideNavList:hover {
+  
+  color: black;
+  padding: 0;
+} */
+.sideNavList li {
+  padding: 15px 15px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Ethnocentric Rg', sans-serif;
+  
+  
+}
+.sideNavList Link li {
+  text-decoration: none;
+}
+.sideNavList li a:hover, .sideNavList li:hover {
+  background-color: #967d0f;
+  color: black;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.sideNavList li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  
+}
+
+/* .sideNavList li a:hover {
+  color: #f97316;
+} */
+
+/* Main Content Section */
+.content {
+  flex: 1;
+  padding: 0px;
+  background-color: #f4f4f4;
+}
+
+
+.sideNavList li.active {
+  background-color: #3c69b2;
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .mainDiv {
+    flex-direction: column;
+  }
+
+  .stickySideNav {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .sideNavList {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-device-width: 281px) and (max-device-width: 768px){
+  .stickyTopNav {
+    display: block;
+    
+  }.stickySideNav {
+    z-index: 99999;
+    height: 1589px;
+    background-color: #000000;
+  }
+  .stickyTopNav {
+    background-color: black;
+    height: 64px;
+  }
+  .image {
+    left: -12%;
+    position: relative;
+  }
+ 
+  .mobileNav {
+    position: relative;
+    top: -58px;
+    float: right;
+    left: -12%;
+    /* width: 20px; */
+    /* padding: 60px; */
+    /* height: 10px; */
+    background-color: black;
+  }
+  .mobileNav li {
+    display: none;
+  }
+  .desktopNav {
+    display: block; /* Hide desktop navigation */
+    font-family: 'Ethnocentric Rg', sans-serif;
+  }
+  .searchBar {
+    display: none;
+  }
+
+ 
+  nav .list1 {
+    display: none;
+    z-index: 9999999;
+    
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    /* z-index: 0; */
+    /* display: none; */
+  }
+  .sideNavList {
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+  }
+  .mobileMenuIcon {
+    display: block; /* Show hamburger icon */
+    z-index: 99999999999999999;
+    /* background-color: red; */
+    position: relative;
+    top: -90%;
+    left: 25%;
+    width: 20%;
+    /* text-align: center; */
+  }
+  .image {
+    width: 110px;
+    margin-top: 10px;
+  }
+  .mobileNav {
+    display: block; /* Show mobile navigation */
+  }
+
+  .searchInput {
+    width: 150px;
+  }
+  nav .lists {
+    display: block;
+    z-index: 9999999;
+    position: absolute;
+  }
+}
